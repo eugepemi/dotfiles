@@ -1,0 +1,29 @@
+.idea
+.DS_Store
+**/__pycache__/
+config/spicetify/*
+.venv
+.env
+
+.cache
+# Python-specific
+*.pyc
+*.pyo
+__pycache__/
+.pytest_cache/
+.ropeproject/
+.mypy_cache/
+.eggs/
+dist/
+build/
+venv/
+env/
+*.egg-info/
+node_modules/
+
+# General
+.DS_Store
+*.swp
+.idea/
+.vscode/
+tmp

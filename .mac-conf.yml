@@ -1,0 +1,19 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+      force: true
+      glob: true
+
+
+- clean: [ '~' ]
+
+- link:
+    ~/.zshrc: config/.zshrc
+    ~/.gitconfig: config/git/.gitconfig
+    ~/.config/starship/starship.toml: config/starship/starship.toml
+    ~/.config/bat/bat.conf: config/bat/bat.conf
+    ~/.config/atuin/config.toml: config/atuin/config.toml
+
+- shell:
+    - [ git submodule update --init --recursive, Installing submodules ]

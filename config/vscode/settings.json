@@ -1,0 +1,69 @@
+{
+    "explorer.confirmDelete": false,
+    "gitlens.integrations.enabled": true,
+    "gitlens.remotes": [
+        {
+        "domain": "src.private.zooplus.net",
+        "type": "BitbucketServer"
+        }
+    ],
+    "editor.formatOnSave": true,
+    "workbench.startupEditor": "none",
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.minimap.enabled": false,
+    "[terraform]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "hashicorp.terraform"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+    },
+    "isort.args": [
+        "--profile",
+        "black",
+        "--dt"
+    ],
+    "explorer.confirmDragAndDrop": false,
+    "editor.largeFileOptimizations": false,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.hg/store/**": true
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // Font shit
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Hack-Nerd-Font-Mono",
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 21,
+    "workbench.fontAliasing": "antialiased",
+    "editor.renderWhitespace": "none",
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.confirmSaveUntitledWorkspace": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "terminal.explorerKind": "external",
+    "makefile.configureOnOpen": true,
+    "redhat.telemetry.enabled": false,
+    "editor.accessibilitySupport": "off",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+}

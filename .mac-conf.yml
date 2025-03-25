@@ -14,6 +14,7 @@
     ~/.config/starship/starship.toml: config/starship/starship.toml
     ~/.config/bat/bat.conf: config/bat/bat.conf
     ~/.config/atuin/config.toml: config/atuin/config.toml
+    ~/.config/ghostty/config: config/ghostty/config
 
 - shell:
     - [ git submodule update --init --recursive, Installing submodules ]

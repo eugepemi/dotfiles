@@ -16,6 +16,7 @@
     ~/.config/atuin/config.toml: config/atuin/config.toml
     ~/.config/ghostty/config: config/ghostty/config
     ~/Library/Application Support/Code/User/settings.json: config/vscode/settings.json
+    ~/.config/karabiner/karabiner.json: config/karabiner/karabiner.json
 
 - shell:
     - [ git submodule update --init --recursive, Installing submodules ]

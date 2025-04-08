@@ -39,12 +39,12 @@ setopt hist_ignore_dups
 setopt hist_find_no_dups
 
 # Shell integrations
+eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
 eval "$(atuin init zsh)"
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Dotfiles
-export DOTFILES=/Users/zp2973/dotfiles
+export DOTFILES=/Users/eugenio.penalver/dotfiles
 source $DOTFILES/shell/main.sh

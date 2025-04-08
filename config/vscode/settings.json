@@ -1,12 +1,12 @@
 {
     "explorer.confirmDelete": false,
     "gitlens.integrations.enabled": true,
-    "gitlens.remotes": [
-        {
-        "domain": "src.private.zooplus.net",
-        "type": "BitbucketServer"
-        }
-    ],
+    // "gitlens.remotes": [
+    //     {
+    //     "domain": "src.private.zooplus.net",
+    //     "type": "BitbucketServer"
+    //     }
+    // ],
     "editor.formatOnSave": true,
     "workbench.startupEditor": "none",
     "editor.defaultFormatter": "ms-python.black-formatter",
@@ -56,6 +56,7 @@
     "window.confirmSaveUntitledWorkspace": false,
     "github.copilot.editor.enableAutoCompletions": true,
     "terminal.explorerKind": "external",
+    "terminal.integrated.fontFamily": "'Hack Nerd Font'",
     "makefile.configureOnOpen": true,
     "redhat.telemetry.enabled": false,
     "editor.accessibilitySupport": "off",
@@ -65,5 +66,5 @@
         "markdown": false,
         "scminput": false
     },
-    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false
 }

@@ -15,6 +15,7 @@
     ~/.config/bat/bat.conf: config/bat/bat.conf
     ~/.config/atuin/config.toml: config/atuin/config.toml
     ~/.config/ghostty/config: config/ghostty/config
+    ~/Library/Application Support/Code/User/settings.json: config/vscode/settings.json
 
 - shell:
     - [ git submodule update --init --recursive, Installing submodules ]

@@ -43,8 +43,13 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
 eval "$(atuin init zsh)"
 eval "$(fzf --zsh)"
-eval "$(zoxide init --cmd cd zsh)"
+# eval "$(zoxide init --cmd cd zsh)"
+eval "$(direnv hook zsh)"
 
 # Dotfiles
 export DOTFILES=/Users/eugenio.penalver/dotfiles
 source $DOTFILES/shell/main.sh
+
+# Created by `pipx` on 2025-05-21 11:10:50
+export PATH="$PATH:/Users/eugenio.penalver/.local/bin"
+export PATH="/usr/local/bin:$PATH"

@@ -15,9 +15,16 @@ $python\
 [](fg:mauve bg:surface0)\
 $docker_context\
 [](fg:rosewater bg:surface0)\
+$kubernetes\
+(fg:mauve bg:surface0)\
 $line_break$character"""
 
 palette = 'catppuccin_macchiato'
+
+[kubernetes]
+style = "bg:mauve fg:base bold"
+format = '[[](mauve) $context :: $namespace [](mauve)]($style)'
+disabled = false
 
 [directory]
 style = "fg:rosewater bg:surface0"

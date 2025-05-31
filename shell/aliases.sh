@@ -17,4 +17,4 @@ alias cat=bat
 alias o.="open ."
 alias top="htop -s PERCENT_MEM"
 alias stree="du --max-depth=n -h | sort --human-numeric-sort"
-
+alias python="python3"

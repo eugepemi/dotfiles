@@ -1,32 +1,29 @@
 {
     "explorer.confirmDelete": false,
     "gitlens.integrations.enabled": true,
-    // "gitlens.remotes": [
-    //     {
-    //     "domain": "src.private.zooplus.net",
-    //     "type": "BitbucketServer"
-    //     }
-    // ],
     "editor.formatOnSave": true,
     "workbench.startupEditor": "none",
-    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.minimap.enabled": false,
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff",
+    },
+    "notebook.formatOnSave.enabled": true,
+    "notebook.codeActionsOnSave": {
+        "notebook.source.fixAll": "explicit",
+        "notebook.source.organizeImports": "explicit"
+      },
+    "notebook.formatOnCellExecution": true,
+    "basedpyright.analysis.typeCheckingMode": "basic",
+    "ruff.nativeServer": "on",
     "[terraform]": {
         "editor.formatOnSave": false,
         "editor.defaultFormatter": "hashicorp.terraform"
     },
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": "explicit"
-        },
-    },
-    "isort.args": [
-        "--profile",
-        "black",
-        "--dt"
-    ],
     "explorer.confirmDragAndDrop": false,
     "editor.largeFileOptimizations": false,
     "files.watcherExclude": {
@@ -46,25 +43,34 @@
     "editor.fontSize": 14,
     "editor.fontFamily": "Hack-Nerd-Font-Mono",
     "editor.fontLigatures": true,
-    "editor.lineHeight": 21,
+    "editor.lineHeight": 1.6,
     "workbench.fontAliasing": "antialiased",
     "editor.renderWhitespace": "none",
     "editor.inlineSuggest.suppressSuggestions": true,
-    "window.commandCenter": false,
-    "workbench.layoutControl.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
     "window.confirmSaveUntitledWorkspace": false,
-    "github.copilot.editor.enableAutoCompletions": true,
     "terminal.explorerKind": "external",
     "terminal.integrated.fontFamily": "'Hack Nerd Font'",
     "makefile.configureOnOpen": true,
     "redhat.telemetry.enabled": false,
     "editor.accessibilitySupport": "off",
+    "github.copilot.editor.enableAutoCompletions": true,
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,
         "markdown": false,
         "scminput": false
     },
-    "editor.unicodeHighlight.ambiguousCharacters": false
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.activityBar.location": "top",
+    "window.commandCenter": false,
+    "workbench.iconTheme": "flow-dark",
+    "workbench.layoutControl.enabled": false,
+    "workbench.colorCustomizations": {
+        "editorGroup.border": "#ceafaf00",
+        "editorGroupHeader.border": "#ceafaf00",
+        "editorGroupHeader.tabsBorder": "#ceafaf00",
+    },
+    "workbench.statusBar.visible": false,
 }

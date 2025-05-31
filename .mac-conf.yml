@@ -5,8 +5,7 @@
       force: true
       glob: true
 
-
-- clean: [ '~' ]
+- clean: ["~"]
 
 - link:
     ~/.zshrc: config/.zshrc
@@ -17,6 +16,7 @@
     ~/.config/ghostty/config: config/ghostty/config
     ~/Library/Application Support/Code/User/settings.json: config/vscode/settings.json
     ~/.config/karabiner/karabiner.json: config/karabiner/karabiner.json
+    ~/.config/zed/settings.json: config/zed/settings.json
 
 - shell:
-    - [ git submodule update --init --recursive, Installing submodules ]
+    - [git submodule update --init --recursive, Installing submodules]

@@ -1,0 +1,189 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "icon_theme": "Catppuccin Macchiato",
+  // AI Assistant Settings
+  "agent": {
+    "always_allow_tool_actions": false,
+    "default_profile": "ask",
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3.7-sonnet"
+    },
+    "default_model": {
+      "model": "claude-3.7-sonnet-thought",
+      "provider": "copilot_chat"
+    },
+    "editor_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3-7-sonnet"
+    },
+    "button": true,
+    "version": "2"
+  },
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  "base_keymap": "VSCode",
+  "vim_mode": true,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Catppuccin Macchiato"
+  },
+  // Language-Specific Settings
+  "languages": {
+    "Python": {
+      "completions": {
+        "lsp": true,
+        "words": "fallback",
+        "timeout_ms": 2
+      },
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "code_actions": {
+            "source.fixAll.ruff": true,
+            "source.organizeImports.ruff": true
+          }
+        },
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ],
+      "language_servers": [
+        "pyright",
+        // "basedpyright",
+        //"pylsp",
+        //"python-refactoring",
+        "ruff"
+      ]
+    }
+  },
+  // LSP (Language Server Protocol) Settings
+  "lsp": {
+    "pyright": {
+      "settings": {
+        "python.analysis": {
+          "diagnosticMode": "openFilesOnly",
+          "typeCheckingMode": "basic"
+        },
+        "disableOrganizeImports": true
+      }
+    },
+    "basedpyright": {
+      "settings": {
+        "python": {
+          "reportMissingTypeStubs": false
+        },
+        "basedpyright.analysis": {
+          "diagnosticMode": "openFilesOnly",
+          "typeCheckingMode": "basic",
+          "reportMissingTypeStubs": false
+        },
+        "disableOrganizeImports": true
+      }
+    },
+    "pylsp": {
+      "settings": {
+        "plugins": {
+          "autopep8": {
+            "enabled": false
+          },
+          "black": {
+            "enabled": false
+          },
+          "flake8": {
+            "enabled": false
+          },
+          "isort": {
+            "enabled": false
+          },
+          "mccabe": {
+            "enabled": false
+          },
+          "pycodestyle": {
+            "enabled": false
+          },
+          "pydocstyle": {
+            "enabled": false
+          },
+          "pyflakes": {
+            "enabled": false
+          },
+          "pylint": {
+            "enabled": false
+          },
+          "yapf": {
+            "enabled": false
+          },
+          // keep the others
+          "pylsp_mypy": {
+            "enabled": true
+          },
+          "jedi": {
+            "enabled": true
+          },
+          "rope": {
+            "enabled": true
+          },
+          "rope_autoimport": {
+            "enabled": true
+          },
+          "rope_completion": {
+            "enabled": true
+          },
+          // disable pylsp ruff in favor of `ruff server`
+          "ruff": {
+            "enabled": false
+          }
+        }
+      }
+    },
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "lineLength": 88,
+          "showSyntaxErrors": true,
+          "lint": {
+            "select": ["ALL"],
+            "ignore": ["D", "S101", "ANN201"]
+          }
+        }
+      }
+    }
+  },
+  // Jupyter Settings
+  "jupyter": {
+    "kernel_selections": {
+      "python": "/Users/eugenio.penalver/.local/pipx/venvs/ipykernel/share/jupyter/kernels/python3"
+    }
+  },
+  // Telemetry Settings
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  // Font Settings
+  "buffer_font_family": "Hack Nerd Font",
+  "buffer_font_size": 17,
+  "buffer_font_features": {
+    "calt": true,
+    "dlig": true
+  },
+  "ui_font_family": "Hack Nerd Font",
+  "ui_font_size": 19,
+  "ui_font_weight": 600,
+  "ui_font_features": {
+    "calt": true
+  },
+  "ui_font_fallbacks": ["Hack Nerd Font"]
+}

@@ -11,13 +11,13 @@
   // AI Assistant Settings
   "agent": {
     "always_allow_tool_actions": false,
-    "default_profile": "ask",
+    "default_profile": "write",
     "inline_assistant_model": {
       "provider": "copilot_chat",
-      "model": "claude-3.7-sonnet"
+      "model": "gpt-4.1"
     },
     "default_model": {
-      "model": "claude-3.7-sonnet-thought",
+      "model": "gpt-4.1",
       "provider": "copilot_chat"
     },
     "editor_model": {
@@ -60,8 +60,8 @@
         }
       ],
       "language_servers": [
-        "pyright",
-        // "basedpyright",
+        // "pyright",
+        "basedpyright",
         //"pylsp",
         //"python-refactoring",
         "ruff"

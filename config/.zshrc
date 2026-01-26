@@ -1,4 +1,4 @@
-# zinit config 
+# zinit config
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
 [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
@@ -43,7 +43,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
 eval "$(atuin init zsh)"
 eval "$(fzf --zsh)"
-# eval "$(zoxide init --cmd cd zsh)"
+eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 eval "$(direnv hook zsh)"
 
 # Dotfiles
@@ -53,3 +54,6 @@ source $DOTFILES/shell/main.sh
 # Created by `pipx` on 2025-05-21 11:10:50
 export PATH="$PATH:/Users/eugenio.penalver/.local/bin"
 export PATH="/usr/local/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/eugenio.penalver/.antigravity/antigravity/bin:$PATH"

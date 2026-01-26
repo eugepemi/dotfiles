@@ -1,76 +1,78 @@
 {
-    "explorer.confirmDelete": false,
-    "gitlens.integrations.enabled": true,
+  "explorer.confirmDelete": false,
+  "gitlens.integrations.enabled": true,
+  "editor.formatOnSave": true,
+  "workbench.startupEditor": "none",
+  "editor.minimap.enabled": false,
+  "[python]": {
     "editor.formatOnSave": true,
-    "workbench.startupEditor": "none",
-    "editor.minimap.enabled": false,
-    "[python]": {
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.fixAll": "explicit",
-            "source.organizeImports": "explicit"
-        },
-        "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
     },
-    "notebook.formatOnSave.enabled": true,
-    "notebook.codeActionsOnSave": {
-        "notebook.source.fixAll": "explicit",
-        "notebook.source.organizeImports": "explicit"
-      },
-    "notebook.formatOnCellExecution": true,
-    "basedpyright.analysis.typeCheckingMode": "basic",
-    "ruff.nativeServer": "on",
-    "[terraform]": {
-        "editor.formatOnSave": false,
-        "editor.defaultFormatter": "hashicorp.terraform"
-    },
-    "explorer.confirmDragAndDrop": false,
-    "editor.largeFileOptimizations": false,
-    "files.watcherExclude": {
-        "**/.git/objects/**": true,
-        "**/.git/subtree-cache/**": true,
-        "**/node_modules/*/**": true,
-        "**/.hg/store/**": true
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[javascriptreact]": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    // Font shit
-    "editor.fontSize": 14,
-    "editor.fontFamily": "Hack-Nerd-Font-Mono",
-    "editor.fontLigatures": true,
-    "editor.lineHeight": 1.6,
-    "workbench.fontAliasing": "antialiased",
-    "editor.renderWhitespace": "none",
-    "editor.inlineSuggest.suppressSuggestions": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "window.confirmSaveUntitledWorkspace": false,
-    "terminal.explorerKind": "external",
-    "terminal.integrated.fontFamily": "'Hack Nerd Font'",
-    "makefile.configureOnOpen": true,
-    "redhat.telemetry.enabled": false,
-    "editor.accessibilitySupport": "off",
-    "github.copilot.editor.enableAutoCompletions": true,
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
-    "editor.unicodeHighlight.ambiguousCharacters": false,
-    "workbench.colorTheme": "Catppuccin Macchiato",
-    "workbench.activityBar.location": "top",
-    "window.commandCenter": false,
-    "workbench.iconTheme": "flow-dark",
-    "workbench.layoutControl.enabled": false,
-    "workbench.colorCustomizations": {
-        "editorGroup.border": "#ceafaf00",
-        "editorGroupHeader.border": "#ceafaf00",
-        "editorGroupHeader.tabsBorder": "#ceafaf00",
-    },
-    "workbench.statusBar.visible": false,
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "notebook.formatOnSave.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "notebook.source.fixAll": "explicit",
+    "notebook.source.organizeImports": "explicit"
+  },
+  "notebook.formatOnCellExecution": true,
+  "basedpyright.analysis.typeCheckingMode": "basic",
+  "ruff.nativeServer": "on",
+  "[terraform]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "editor.largeFileOptimizations": false,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/.hg/store/**": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Font shit
+  "editor.fontSize": 14,
+  "editor.fontFamily": "Hack-Nerd-Font-Mono",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.6,
+  "workbench.fontAliasing": "antialiased",
+  "editor.renderWhitespace": "none",
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "window.confirmSaveUntitledWorkspace": false,
+  "terminal.explorerKind": "external",
+  "terminal.integrated.fontFamily": "'Hack Nerd Font'",
+  "makefile.configureOnOpen": true,
+  "redhat.telemetry.enabled": false,
+  "editor.accessibilitySupport": "off",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.activityBar.location": "top",
+  "window.commandCenter": false,
+  "workbench.iconTheme": "flow-dark",
+  "workbench.layoutControl.enabled": false,
+  "workbench.colorCustomizations": {
+    "editorGroup.border": "#ceafaf00",
+    "editorGroupHeader.border": "#ceafaf00",
+    "editorGroupHeader.tabsBorder": "#ceafaf00"
+  },
+  "workbench.statusBar.visible": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3"
 }

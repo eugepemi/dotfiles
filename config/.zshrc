@@ -44,7 +44,10 @@ eval "$(starship init zsh)"
 eval "$(atuin init zsh)"
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
-eval "$(zoxide init --cmd cd zsh)"
+# Avoid initializing zoxide if CLAUDECODE is set, as it interferes with the Claude Code CLI
+if [[ -z "${CLAUDECODE}" ]]; then
+  eval "$(zoxide init --cmd cd zsh)"
+fi
 eval "$(direnv hook zsh)"
 
 # Dotfiles
@@ -57,3 +60,10 @@ export PATH="/usr/local/bin:$PATH"
 
 # Added by Antigravity
 export PATH="/Users/eugenio.penalver/.antigravity/antigravity/bin:$PATH"
+
+# bun completions
+[ -s "/Users/eugenio.penalver/.bun/_bun" ] && source "/Users/eugenio.penalver/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

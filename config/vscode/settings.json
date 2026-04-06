@@ -8,21 +8,21 @@
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
+      "source.organizeImports": "explicit",
     },
-    "editor.defaultFormatter": "charliermarsh.ruff"
+    "editor.defaultFormatter": "charliermarsh.ruff",
   },
   "notebook.formatOnSave.enabled": true,
   "notebook.codeActionsOnSave": {
     "notebook.source.fixAll": "explicit",
-    "notebook.source.organizeImports": "explicit"
+    "notebook.source.organizeImports": "explicit",
   },
   "notebook.formatOnCellExecution": true,
   "basedpyright.analysis.typeCheckingMode": "basic",
   "ruff.nativeServer": "on",
   "[terraform]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "hashicorp.terraform"
+    "editor.defaultFormatter": "hashicorp.terraform",
   },
   "explorer.confirmDragAndDrop": false,
   "editor.largeFileOptimizations": false,
@@ -30,14 +30,14 @@
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
     "**/node_modules/*/**": true,
-    "**/.hg/store/**": true
+    "**/.hg/store/**": true,
   },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "vscode.json-language-features",
   },
   "[javascriptreact]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   // Font shit
   "editor.fontSize": 14,
@@ -59,7 +59,7 @@
     "*": true,
     "plaintext": false,
     "markdown": false,
-    "scminput": false
+    "scminput": false,
   },
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "workbench.colorTheme": "Catppuccin Macchiato",
@@ -70,9 +70,10 @@
   "workbench.colorCustomizations": {
     "editorGroup.border": "#ceafaf00",
     "editorGroupHeader.border": "#ceafaf00",
-    "editorGroupHeader.tabsBorder": "#ceafaf00"
+    "editorGroupHeader.tabsBorder": "#ceafaf00",
   },
   "workbench.statusBar.visible": false,
   "github.copilot.nextEditSuggestions.enabled": true,
-  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3"
+  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
+  "claudeCode.preferredLocation": "panel",
 }

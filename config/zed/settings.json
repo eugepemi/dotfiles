@@ -7,33 +7,43 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "edit_predictions": {
+    "provider": "copilot"
+  },
+  "agent_servers": {
+    "codex-acp": {
+      "type": "registry"
+    },
+    "claude-acp": {
+      "type": "registry",
+      "default_model": "eu.anthropic.claude-opus-4-6-v1"
+    }
+  },
   "icon_theme": "Catppuccin Macchiato",
   // AI Assistant Settings
   "agent": {
-    "default_profile": "write",
-    "always_allow_tool_actions": true,
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4.5"
+      "provider": "amazon-bedrock",
+      "model": "claude-sonnet-4-6",
+      "enable_thinking": false
     },
+    "favorite_models": [],
+    "default_profile": "write",
     "model_parameters": []
-  },
-  "features": {
-    "edit_prediction_provider": "copilot"
   },
   "base_keymap": "VSCode",
   "vim_mode": true,
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Macchiato"
+    "dark": "Catppuccin Macchiato",
   },
   // Language-Specific Settings
   "languages": {
     "Python": {
       "completions": {
         "lsp": true,
-        "words": "fallback"
+        "words": "fallback",
       },
       "format_on_save": "on",
       "formatter": [
@@ -41,9 +51,9 @@
         { "code_action": "source.organizeImports.ruff" },
         {
           "language_server": {
-            "name": "ruff"
-          }
-        }
+            "name": "ruff",
+          },
+        },
       ],
       "language_servers": [
         // "pyright",
@@ -51,9 +61,9 @@
         //"pylsp",
         //"python-refactoring",
         "ty",
-        "ruff"
-      ]
-    }
+        "ruff",
+      ],
+    },
   },
   // LSP (Language Server Protocol) Settings
   "lsp": {
@@ -61,79 +71,79 @@
       "settings": {
         "python.analysis": {
           "diagnosticMode": "openFilesOnly",
-          "typeCheckingMode": "basic"
+          "typeCheckingMode": "basic",
         },
-        "disableOrganizeImports": true
-      }
+        "disableOrganizeImports": true,
+      },
     },
     "basedpyright": {
       "settings": {
         "python": {
-          "reportMissingTypeStubs": false
+          "reportMissingTypeStubs": false,
         },
         "basedpyright.analysis": {
           "diagnosticMode": "openFilesOnly",
           "typeCheckingMode": "basic",
-          "reportMissingTypeStubs": false
+          "reportMissingTypeStubs": false,
         },
-        "disableOrganizeImports": true
-      }
+        "disableOrganizeImports": true,
+      },
     },
     "pylsp": {
       "settings": {
         "plugins": {
           "autopep8": {
-            "enabled": false
+            "enabled": false,
           },
           "black": {
-            "enabled": false
+            "enabled": false,
           },
           "flake8": {
-            "enabled": false
+            "enabled": false,
           },
           "isort": {
-            "enabled": false
+            "enabled": false,
           },
           "mccabe": {
-            "enabled": false
+            "enabled": false,
           },
           "pycodestyle": {
-            "enabled": false
+            "enabled": false,
           },
           "pydocstyle": {
-            "enabled": false
+            "enabled": false,
           },
           "pyflakes": {
-            "enabled": false
+            "enabled": false,
           },
           "pylint": {
-            "enabled": false
+            "enabled": false,
           },
           "yapf": {
-            "enabled": false
+            "enabled": false,
           },
           // keep the others
           "pylsp_mypy": {
-            "enabled": true
+            "enabled": true,
           },
           "jedi": {
-            "enabled": true
+            "enabled": true,
           },
           "rope": {
-            "enabled": true
+            "enabled": true,
           },
           "rope_autoimport": {
-            "enabled": true
+            "enabled": true,
           },
           "rope_completion": {
-            "enabled": true
+            "enabled": true,
           },
           // disable pylsp ruff in favor of `ruff server`
           "ruff": {
-            "enabled": false
-          }
-        }
-      }
+            "enabled": false,
+          },
+        },
+      },
     },
     "ruff": {
       "initialization_options": {
@@ -142,35 +152,35 @@
           "showSyntaxErrors": true,
           "lint": {
             "select": ["COM812", "E4", "E7", "E9", "F", "I"],
-            "ignore": ["D", "S101", "ANN201"]
-          }
-        }
-      }
-    }
+            "ignore": ["D", "S101", "ANN201"],
+          },
+        },
+      },
+    },
   },
   // Jupyter Settings
   "jupyter": {
     "kernel_selections": {
-      "python": "/Users/eugenio.penalver/.local/pipx/venvs/ipykernel/share/jupyter/kernels/python3"
-    }
+      "python": "/Users/eugenio.penalver/.local/pipx/venvs/ipykernel/share/jupyter/kernels/python3",
+    },
   },
   // Telemetry Settings
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   // Font Settings
   "buffer_font_family": "Hack Nerd Font",
   "buffer_font_size": 17,
   "buffer_font_features": {
     "calt": true,
-    "dlig": true
+    "dlig": true,
   },
   "ui_font_family": "Hack Nerd Font",
   "ui_font_size": 19,
   "ui_font_weight": 600,
   "ui_font_features": {
-    "calt": true
+    "calt": true,
   },
-  "ui_font_fallbacks": ["Hack Nerd Font"]
+  "ui_font_fallbacks": ["Hack Nerd Font"],
 }

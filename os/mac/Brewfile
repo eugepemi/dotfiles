@@ -1,39 +1,177 @@
 tap "aws/tap"
-tap "homebrew/cask-fonts"
-tap "homebrew/services"
+tap "run-llama/liteparse"
+# Get stuff done with container-native workflows for Kubernetes
+brew "argo"
+# Download with resuming and segmented downloading
+brew "aria2"
+# Improved shell history for zsh, bash, fish and nushell
 brew "atuin"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Pyright fork with various improvements and built-in pylance features
+brew "basedpyright"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Dependency manager for Cocoa projects
+brew "cocoapods"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# Load/unload environment variables based on $PWD
+brew "direnv"
+# Isolated development environments using Docker
 brew "docker-compose"
+# Embeddable SQL OLAP Database Management System
 brew "duckdb"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# Command-line fuzzy finder written in Go
 brew "fzf"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
 brew "git"
+# Git extension for versioning large files
+brew "git-lfs"
+# Open-source GitLab command-line tool
+brew "glab"
+# Task is a task runner/build tool that aims to be simpler and easier to use
+brew "go-task"
+# GNU grep, egrep and fgrep
+brew "grep"
+# Kubernetes package manager
 brew "helm"
+# Client library for huggingface.co hub
+brew "hf"
+# Improved top (interactive process viewer)
 brew "htop"
+# Interactive computing in Python
+brew "ipython"
+# Lightweight and flexible command-line JSON processor
 brew "jq"
+# Handy way to save and run project-specific commands
+brew "just"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "k9s"
+# Tool that can switch between kubectl contexts easily and create aliases
 brew "kubectx"
+# LLVM's OpenMP runtime library
+brew "libomp"
+# Postgres C API library
+brew "libpq"
+# Clone of ls with colorful output, file type icons, and more
 brew "lsd"
+# Utility for directing compilation
 brew "make"
+# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# AI coding agent, built for the terminal
+brew "opencode"
+# Development kit for the Java programming language
 brew "openjdk"
+# Execute binaries from Python packages in isolated environments
 brew "pipx"
+# Python package management tool
+brew "poetry"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
+# Framework for managing multi-language pre-commit hooks
 brew "pre-commit"
+# Python version management
 brew "pyenv"
+# Pyenv plugin to manage virtualenv
 brew "pyenv-virtualenv"
+# Static type checker for Python
+brew "pyright"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
+# Persistent key-value database, with built-in net interface
 brew "redis"
+# CLI proxy to minimize LLM token consumption
+brew "rtk"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Modernized, complete, self-contained TeX/LaTeX engine
+brew "tectonic"
+# Tool to build, change, and version infrastructure
 brew "terraform"
+# Enables extra languages support for Tesseract
+brew "tesseract-lang"
+# Text interface for Git repositories
+brew "tig"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Collection of Linux utilities
+brew "util-linux"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
+# JavaScript package manager
+brew "yarn"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
+# Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Desktop password and login vault
 cask "bitwarden"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
+# Claude code parallelisation
+cask "conductor"
+# Universal database tool and SQL client
+cask "dbeaver-community"
+# Voice and text chat software
 cask "discord"
-cask "docker"
+# UI toolkit for building applications for mobile, web and desktop
+cask "flutter"
 cask "font-hack-nerd-font"
+cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-ubuntu-mono-nerd-font"
 cask "font-ubuntu-nerd-font"
-cask "google-chrome"
+# Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Web browser
+cask "google-chrome"
+# Speech to text application
+cask "handy"
+# Utility to hide menu bar items
 cask "hiddenbar"
+# Free and open-source media player
+cask "iina"
+# Keyboard customiser
+cask "karabiner-elements"
+# Free cross-platform office suite, fresh version
+cask "libreoffice"
+# Privacy-first, open-source platform for knowledge sharing and management
+cask "logseq"
+# Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Replacement for Docker Desktop
+cask "orbstack"
+# Control your tools with a few keystrokes
 cask "raycast"
+# StrongDM client
+cask "sdm"
+# Plugin for AWS CLI to start and end sessions that connect to managed instances
+cask "session-manager-plugin"
+# Team communication and collaboration software
 cask "slack"
-cask "visual-studio-code"
+# Open-source BitTorrent client
+cask "transmission"
+# Multimedia player
+cask "vlc"
+# Multiplayer code editor
+cask "zed"
+uv "graphifyy"
+npm "@google/gemini-cli"
+npm "opencommit"
+npm "pdf-parse"

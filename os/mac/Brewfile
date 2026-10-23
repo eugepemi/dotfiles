@@ -1,7 +1,4 @@
-tap "aws/tap"
 tap "run-llama/liteparse"
-# Get stuff done with container-native workflows for Kubernetes
-brew "argo"
 # Download with resuming and segmented downloading
 brew "aria2"
 # Improved shell history for zsh, bash, fish and nushell
@@ -16,8 +13,8 @@ brew "node"
 brew "basedpyright"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Dependency manager for Cocoa projects
-brew "cocoapods"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Load/unload environment variables based on $PWD
@@ -36,10 +33,6 @@ brew "gh"
 brew "git"
 # Git extension for versioning large files
 brew "git-lfs"
-# Open-source GitLab command-line tool
-brew "glab"
-# Task is a task runner/build tool that aims to be simpler and easier to use
-brew "go-task"
 # GNU grep, egrep and fgrep
 brew "grep"
 # Kubernetes package manager
@@ -60,8 +53,6 @@ brew "k9s"
 brew "kubectx"
 # LLVM's OpenMP runtime library
 brew "libomp"
-# Postgres C API library
-brew "libpq"
 # Clone of ls with colorful output, file type icons, and more
 brew "lsd"
 # Utility for directing compilation
@@ -74,28 +65,10 @@ brew "opencode"
 brew "openjdk"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
-# Python package management tool
-brew "poetry"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
 # Framework for managing multi-language pre-commit hooks
 brew "pre-commit"
-# Python version management
-brew "pyenv"
-# Pyenv plugin to manage virtualenv
-brew "pyenv-virtualenv"
-# Static type checker for Python
-brew "pyright"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
-# Persistent key-value database, with built-in net interface
-brew "redis"
-# CLI proxy to minimize LLM token consumption
-brew "rtk"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Modernized, complete, self-contained TeX/LaTeX engine
@@ -104,8 +77,6 @@ brew "tectonic"
 brew "terraform"
 # Enables extra languages support for Tesseract
 brew "tesseract-lang"
-# Text interface for Git repositories
-brew "tig"
 # Terminal multiplexer
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
@@ -122,6 +93,8 @@ brew "yt-dlp"
 brew "zoxide"
 # Desktop password and login vault
 cask "bitwarden"
+# Utility that prevents the system from going to sleep
+cask "caffeine"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 # Claude code parallelisation
@@ -130,13 +103,7 @@ cask "conductor"
 cask "dbeaver-community"
 # Voice and text chat software
 cask "discord"
-# UI toolkit for building applications for mobile, web and desktop
-cask "flutter"
 cask "font-hack-nerd-font"
-cask "font-jetbrains-mono"
-cask "font-jetbrains-mono-nerd-font"
-cask "font-ubuntu-mono-nerd-font"
-cask "font-ubuntu-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Web browser
@@ -159,19 +126,21 @@ cask "obsidian"
 cask "orbstack"
 # Control your tools with a few keystrokes
 cask "raycast"
-# StrongDM client
-cask "sdm"
-# Plugin for AWS CLI to start and end sessions that connect to managed instances
-cask "session-manager-plugin"
 # Team communication and collaboration software
 cask "slack"
 # Open-source BitTorrent client
 cask "transmission"
-# Multimedia player
-cask "vlc"
 # Multiplayer code editor
 cask "zed"
 uv "graphifyy"
+npm "@earendil-works/pi-coding-agent"
 npm "@google/gemini-cli"
+npm "chrome-devtools-axi"
+npm "gh-axi"
+npm "lavish-axi"
+npm "linear-axi"
 npm "opencommit"
 npm "pdf-parse"
+npm "pnpm"
+npm "quota-axi"
+npm "tasks-axi"

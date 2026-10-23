@@ -23,8 +23,6 @@ brew "direnv"
 brew "docker-compose"
 # Embeddable SQL OLAP Database Management System
 brew "duckdb"
-# Play, record, convert, and stream select audio and video codecs
-brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
@@ -112,8 +110,6 @@ cask "google-chrome"
 cask "handy"
 # Utility to hide menu bar items
 cask "hiddenbar"
-# Free and open-source media player
-cask "iina"
 # Keyboard customiser
 cask "karabiner-elements"
 # Free cross-platform office suite, fresh version
@@ -128,13 +124,9 @@ cask "orbstack"
 cask "raycast"
 # Team communication and collaboration software
 cask "slack"
-# Open-source BitTorrent client
-cask "transmission"
 # Multiplayer code editor
 cask "zed"
-uv "graphifyy"
 npm "@earendil-works/pi-coding-agent"
-npm "@google/gemini-cli"
 npm "chrome-devtools-axi"
 npm "gh-axi"
 npm "lavish-axi"

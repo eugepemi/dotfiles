@@ -30,5 +30,6 @@ Links only (skip Homebrew): `./install --only link`.
 - **Shell changes**: edit files in `shell/`. `main.sh` sources the others via `$DOTFILES`.
 - **Homebrew packages**: edit `os/mac/Brewfile`.
 - Never edit anything in `dotbot/` (submodule).
+- **Git identity**: work identity is the default and lives only in untracked `~/.gitconfig-work` (seeded from `config/git/.gitconfig-work.example`). Personal email is tracked in `config/git/personal.gitconfig` and applied to personal GitHub remotes via `includeIf` in `config/git/.gitconfig`. Never commit a work email.
 - macOS only — `install` rejects other OSes.
 - After editing `.mac-conf.yml`, run `./install` to apply.

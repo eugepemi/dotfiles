@@ -10,6 +10,7 @@
 - link:
     ~/.zshrc: config/.zshrc
     ~/.gitconfig: config/git/.gitconfig
+    ~/.config/git/personal.gitconfig: config/git/personal.gitconfig
     ~/.config/starship/starship.toml: config/starship/starship.toml
     ~/.config/bat/bat.conf: config/bat/bat.conf
     ~/.config/atuin/config.toml: config/atuin/config.toml
@@ -20,6 +21,7 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - ['[ -f ~/.gitconfig-work ] || cp config/git/.gitconfig-work.example ~/.gitconfig-work', Seeding work git identity (edit ~/.gitconfig-work by hand)]
     - command: os/mac/install.sh
       description: Installing Homebrew and Brewfile packages
       stdin: true

@@ -1,0 +1,6 @@
+# Work git identity: the default for every repo that isn't a personal remote
+# (see config/git/.gitconfig). Not tracked: ./install copies this to
+# ~/.gitconfig-work once; edit it by hand for each job.
+# Until an email is set, git refuses to commit (user.useConfigOnly).
+[user]
+#	email = you@company.com

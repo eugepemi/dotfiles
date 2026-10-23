@@ -1,6 +1,7 @@
 [user]
-	email = eugenio.penalver@clarity.ai
 	name = Eugenio Peñalver
+	# Never guess an email from the hostname: no configured email = no commit
+	useConfigOnly = true
 [core]
 	editor = nvim
 [filter "lfs"]
@@ -10,3 +11,17 @@
 	required = true
 [push]
 	autoSetupRemote = true
+
+# Default identity is work: untracked, edit by hand per job
+# (template: config/git/.gitconfig-work.example, seeded by ./install)
+[include]
+	path = ~/.gitconfig-work
+
+# Personal remotes always use the personal identity, wherever they're cloned.
+# Must stay below the work include so it wins.
+[includeIf "hasconfig:remote.*.url:git@github.com:eugepemi/**"]
+	path = ~/.config/git/personal.gitconfig
+[includeIf "hasconfig:remote.*.url:https://github.com/eugepemi/**"]
+	path = ~/.config/git/personal.gitconfig
+[includeIf "hasconfig:remote.*.url:git@github.com:Quant[Rr]aiders/**"]
+	path = ~/.config/git/personal.gitconfig

@@ -19,10 +19,18 @@
     # Link the directory, not karabiner.json: Karabiner replaces the file on save, breaking a file symlink
     ~/.config/karabiner: config/karabiner
     ~/.config/zed/settings.json: config/zed/settings.json
+    # Claude Code replaces files it writes; fail loudly rather than clobber a diverged CLAUDE.md
+    ~/.claude/CLAUDE.md:
+      path: config/claude/CLAUDE.md
+      force: false
+    ~/.claude/commands/: config/claude/commands/*
+    ~/.claude/agents/: config/claude/agents/*
+    ~/.claude/skills/save: config/claude/skills/save
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - ['[ -f ~/.gitconfig-work ] || cp config/git/.gitconfig-work.example ~/.gitconfig-work', Seeding work git identity (edit ~/.gitconfig-work by hand)]
+    - ['[ -f ~/.claude/settings.json ] || { mkdir -p ~/.claude && cp config/claude/settings.json ~/.claude/settings.json; }', Seeding Claude Code settings (copied, not linked)]
     - command: os/mac/install.sh
       description: Installing Homebrew and Brewfile packages
       stdin: true

@@ -8,7 +8,7 @@ macOS dotfiles managed with [dotbot](https://github.com/anishathalye/dotbot). Sy
 |------|---------|
 | `.mac-conf.yml` | dotbot config — defines every symlink and install step |
 | `install` | entrypoint: syncs submodules, runs dotbot with `.mac-conf.yml` (macOS only): links, then Homebrew + Brewfile |
-| `config/` | app configs (zsh, git, starship, bat, atuin, ghostty, zed, karabiner) |
+| `config/` | app configs (zsh, git, starship, bat, atuin, ghostty, zed, karabiner, claude) |
 | `shell/` | zsh scripts sourced at startup: `aliases.sh`, `exports.sh`, `functions.sh`, `main.sh` |
 | `os/mac/` | `install.sh` (installs Homebrew if missing, then installs missing Brewfile deps) + `Brewfile` |
 | `dotbot/` | dotbot submodule — do not edit |
@@ -32,5 +32,6 @@ Links only (skip Homebrew): `./install --only link`.
 - Never edit anything in `dotbot/` (submodule).
 - **Secrets** (API keys, tokens) go in untracked `~/.secrets.zsh` (chmod 600), sourced by `shell/exports.sh`. Never put them in `shell/` or anywhere in this public repo.
 - **Git identity**: work identity is the default and lives only in untracked `~/.gitconfig-work` (seeded from `config/git/.gitconfig-work.example`). Personal email is tracked in `config/git/personal.gitconfig` and applied to personal GitHub remotes via `includeIf` in `config/git/.gitconfig`. Never commit a work email.
+- **Claude Code** (`config/claude/`): `CLAUDE.md`, commands, agents and the `save` skill are linked. `settings.json` is a template *copied* once by `./install` (Claude Code replaces symlinked settings on write), so update it by hand from `~/.claude/settings.json` and keep it free of absolute paths, work permissions and secrets. Never track `settings.local.json`. `dcg` and `herdr` add their own hooks (`dcg install`, `herdr integration`); skills from installers (impeccable, graphify, no-mistakes, skill-creator) are reinstalled, not tracked.
 - macOS only — `install` rejects other OSes.
 - After editing `.mac-conf.yml`, run `./install` to apply.

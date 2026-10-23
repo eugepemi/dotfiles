@@ -20,3 +20,8 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - command: os/mac/install.sh
+      description: Installing Homebrew and Brewfile packages
+      stdin: true
+      stdout: true
+      stderr: true

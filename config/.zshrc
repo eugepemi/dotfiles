@@ -51,18 +51,19 @@ fi
 eval "$(direnv hook zsh)"
 
 # Dotfiles
-export DOTFILES=/Users/eugenio.penalver/dotfiles
-source $DOTFILES/shell/main.sh
+# Resolve ~/.zshrc symlink back to the repo root, wherever it was cloned
+export DOTFILES="${${(%):-%x}:A:h:h}"
+source "$DOTFILES/shell/main.sh"
 
 # Created by `pipx` on 2025-05-21 11:10:50
-export PATH="$PATH:/Users/eugenio.penalver/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 export PATH="/usr/local/bin:$PATH"
 
 # Added by Antigravity
-export PATH="/Users/eugenio.penalver/.antigravity/antigravity/bin:$PATH"
+export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
 
 # bun completions
-[ -s "/Users/eugenio.penalver/.bun/_bun" ] && source "/Users/eugenio.penalver/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"

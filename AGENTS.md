@@ -7,10 +7,10 @@ macOS dotfiles managed with [dotbot](https://github.com/anishathalye/dotbot). Sy
 | Path | Purpose |
 |------|---------|
 | `.mac-conf.yml` | dotbot config — defines every symlink and install step |
-| `install` | entrypoint: syncs submodules, runs dotbot with `.mac-conf.yml` (macOS only) |
+| `install` | entrypoint: syncs submodules, runs dotbot with `.mac-conf.yml` (macOS only): links, then Homebrew + Brewfile |
 | `config/` | app configs (zsh, git, starship, bat, atuin, ghostty, vscode, zed, karabiner) |
 | `shell/` | zsh scripts sourced at startup: `aliases.sh`, `exports.sh`, `functions.sh`, `main.sh` |
-| `os/mac/` | `install.sh` + `Brewfile` for Homebrew packages |
+| `os/mac/` | `install.sh` (installs Homebrew if missing, then installs missing Brewfile deps) + `Brewfile` |
 | `dotbot/` | dotbot submodule — do not edit |
 
 ## Install
@@ -19,7 +19,10 @@ macOS dotfiles managed with [dotbot](https://github.com/anishathalye/dotbot). Sy
 ./install
 ```
 
-Idempotent. Relinks with `relink: true, force: true`.
+Idempotent. Relinks with `relink: true, force: true`, then installs only *missing* Brewfile deps (never upgrades).
+
+Fresh Mac: install Xcode CLT (`xcode-select --install`) so `git` exists, clone this repo, run `./install`.
+Links only (skip Homebrew): `./install --only link`.
 
 ## Rules for agents
 

@@ -15,7 +15,8 @@
     ~/.config/atuin/config.toml: config/atuin/config.toml
     ~/.config/ghostty/config: config/ghostty/config
     ~/Library/Application Support/Code/User/settings.json: config/vscode/settings.json
-    ~/.config/karabiner/karabiner.json: config/karabiner/karabiner.json
+    # Link the directory, not karabiner.json: Karabiner replaces the file on save, breaking a file symlink
+    ~/.config/karabiner: config/karabiner
     ~/.config/zed/settings.json: config/zed/settings.json
 
 - shell:

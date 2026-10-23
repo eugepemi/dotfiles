@@ -27,3 +27,6 @@ node_modules/
 .idea/
 .vscode/
 tmp
+
+# Karabiner-managed, machine-local
+config/karabiner/automatic_backups/

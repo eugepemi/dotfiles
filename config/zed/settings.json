@@ -39,11 +39,11 @@
     "default_model": {
       "effort": "high",
       "provider": "amazon-bedrock",
-      "model": "claude-opus-4-8",
+      "model": "claude-sonnet-5",
       "enable_thinking": true
     },
     "favorite_models": [],
-    "default_profile": "write",
+    "default_profile": "ask",
     "model_parameters": []
   },
   "base_keymap": "VSCode",

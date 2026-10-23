@@ -85,8 +85,6 @@ brew "util-linux"
 brew "uv"
 # JavaScript package manager
 brew "yarn"
-# Feature-rich command-line audio/video downloader
-brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Desktop password and login vault

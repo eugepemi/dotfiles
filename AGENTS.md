@@ -8,7 +8,7 @@ macOS dotfiles managed with [dotbot](https://github.com/anishathalye/dotbot). Sy
 |------|---------|
 | `.mac-conf.yml` | dotbot config — defines every symlink and install step |
 | `install` | entrypoint: syncs submodules, runs dotbot with `.mac-conf.yml` (macOS only): links, then Homebrew + Brewfile |
-| `config/` | app configs (zsh, git, starship, bat, atuin, ghostty, vscode, zed, karabiner) |
+| `config/` | app configs (zsh, git, starship, bat, atuin, ghostty, zed, karabiner) |
 | `shell/` | zsh scripts sourced at startup: `aliases.sh`, `exports.sh`, `functions.sh`, `main.sh` |
 | `os/mac/` | `install.sh` (installs Homebrew if missing, then installs missing Brewfile deps) + `Brewfile` |
 | `dotbot/` | dotbot submodule — do not edit |

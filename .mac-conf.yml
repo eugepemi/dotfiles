@@ -11,6 +11,7 @@
     ~/.zshrc: config/.zshrc
     ~/.gitconfig: config/git/.gitconfig
     ~/.config/git/personal.gitconfig: config/git/personal.gitconfig
+    ~/.config/git/ignore: config/git/ignore
     ~/.config/starship/starship.toml: config/starship/starship.toml
     ~/.config/bat/bat.conf: config/bat/bat.conf
     ~/.config/atuin/config.toml: config/atuin/config.toml

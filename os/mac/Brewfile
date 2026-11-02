@@ -1,4 +1,5 @@
 tap "run-llama/liteparse"
+tap "hashicorp/tap"
 # Download with resuming and segmented downloading
 brew "aria2"
 # Improved shell history for zsh, bash, fish and nushell
@@ -72,7 +73,7 @@ brew "starship"
 # Modernized, complete, self-contained TeX/LaTeX engine
 brew "tectonic"
 # Tool to build, change, and version infrastructure
-brew "terraform"
+brew "hashicorp/tap/terraform"
 # Enables extra languages support for Tesseract
 brew "tesseract-lang"
 # Terminal multiplexer

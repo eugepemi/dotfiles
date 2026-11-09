@@ -31,7 +31,7 @@ Links only (skip Homebrew): `./install --only link`.
 - **Homebrew packages**: edit `os/mac/Brewfile`.
 - Never edit anything in `dotbot/` (submodule).
 - **Secrets** (API keys, tokens) go in untracked `~/.secrets.zsh` (chmod 600), sourced by `shell/exports.sh`. Never put them in `shell/` or anywhere in this public repo.
-- **Git identity**: work identity is the default and lives only in untracked `~/.gitconfig-work` (seeded from `config/git/.gitconfig-work.example`). Personal email is tracked in `config/git/personal.gitconfig` and applied to personal GitHub remotes via `includeIf` in `config/git/.gitconfig`. Never commit a work email.
+- **Git identity**: single identity (name + personal email) set in `config/git/.gitconfig`, used for personal and work repos alike.
 - **Claude Code** (`config/claude/`): commands, agents and the `save` skill are linked. `settings.json` is a template *copied* once by `./install` (Claude Code replaces symlinked settings on write), so update it by hand from `~/.claude/settings.json` and keep it free of absolute paths, work permissions and secrets. Never track `settings.local.json`. `dcg` and `herdr` add their own hooks (`dcg install`, `herdr integration`); skills from installers (impeccable, no-mistakes, skill-creator) are reinstalled, not tracked.
 - macOS only — `install` rejects other OSes.
 - After editing `.mac-conf.yml`, run `./install` to apply.
